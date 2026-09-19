@@ -988,9 +988,7 @@ jobs:
                 user_email: emailInput,
                 login_time: new Date().toLocaleString()
             };
-
-            // Tumhi EmailJS service ID ani template ID ithe taku shakta
-            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+            emailjs.send('service_calender_google#', 'template_nqp6n1k', templateParams)
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
                 }, function(error) {
